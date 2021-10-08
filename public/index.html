@@ -9,6 +9,12 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -39,5 +45,22 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyARLYpc2uHFnjqyMFv293nO2mSehg3WDgI",
+        authDomain: "expense-tracker-ceecf.firebaseapp.com",
+        projectId: "expense-tracker-ceecf",
+        storageBucket: "expense-tracker-ceecf.appspot.com",
+        messagingSenderId: "311662467794",
+        appId: "1:311662467794:web:4ef5e45863e9378aae6b0b",
+        measurementId: "G-KM878KEHY2",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>
